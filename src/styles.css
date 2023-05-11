@@ -42,6 +42,10 @@ a {
   -o-border-radius: var(--border-radius);
   padding: var(--padding);
 }
+.about-link:hover {
+  background: var(--primary-color);
+  color: #ffffff;
+}
 .contact-link {
   color: #ffffff;
   background: var(--primary-color);
@@ -54,7 +58,9 @@ a {
   padding: var(--padding);
 }
 .contact-link:hover {
-  color: #6c63ff;
+  border: 1px solid var(--primary-color);
+  background: #ffffff;
+  color: var(--primary-color);
   transition: 200ms;
   -webkit-transition: 200ms;
   -moz-transition: 200ms;
@@ -73,7 +79,9 @@ a {
   padding: var(--padding);
 }
 .yoga-link:hover {
-  color: #6c63ff;
+  border: 1px solid var(--primary-color);
+  background: #ffffff;
+  color: var(--primary-color);
   transition: 200ms;
   -webkit-transition: 200ms;
   -moz-transition: 200ms;
@@ -92,12 +100,18 @@ a {
   padding: var(--padding);
 }
 .weather-link:hover {
-  color: #6c63ff;
+  border-radius: 1px solid var(--primary-color);
+  background: #ffffff;
+  color: var(--primary-color);
   transition: 200ms;
   -webkit-transition: 200ms;
   -moz-transition: 200ms;
   -ms-transition: 200ms;
   -o-transition: 200ms;
+  -webkit-border-radius: 1px solid var(--primary-color);
+  -moz-border-radius: 1px solid var(--primary-color);
+  -ms-border-radius: 1px solid var(--primary-color);
+  -o-border-radius: 1px solid var(--primary-color);
 }
 
 .yoghurt-link {
@@ -112,14 +126,15 @@ a {
   padding: var(--padding);
 }
 .yoghurt-link:hover {
-  color: #6c63ff;
+  border: 1px solid var(--primary-color);
+  background: #ffffff;
+  color: var(--primary-color);
   transition: 200ms;
   -webkit-transition: 200ms;
   -moz-transition: 200ms;
   -ms-transition: 200ms;
   -o-transition: 200ms;
 }
-
 
 .contact-info h3,
 .abt {
