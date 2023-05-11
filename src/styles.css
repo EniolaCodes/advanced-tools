@@ -18,6 +18,7 @@ h3 {
 }
 p {
   line-height: 2;
+  font-size: 18px;
 }
 a {
   text-decoration: none;
@@ -145,4 +146,30 @@ a {
   font-size: 25px;
   margin-left: 60px;
   color: #6c63ff;
+}
+@media (max-width: 576px) {
+  h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  p {
+    text-align: justify;
+  }
+
+  .yoga-link,
+  .weather-link,
+  .yoghurt-link {
+    display: block;
+    text-align: center;
+    margin: 0 30px;
+    letter-spacing: 2px;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .bone {
+    width: 100%;
+    padding: 10px;
+  }
 }
