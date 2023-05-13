@@ -10,11 +10,21 @@
 }
 body {
   color: #36454f;
+  margin: 100px 0;
 }
 h1,
 h2,
 h3 {
   margin: 0;
+}
+h1 {
+  font-size: 96px;
+}
+h2 {
+  font-size: 48px;
+}
+h3 {
+  font-size: 24px;
 }
 p {
   line-height: 2;
@@ -24,16 +34,13 @@ a {
   text-decoration: none;
   font-size: 18px;
 }
-.intro {
-  margin-top: 100px;
-}
+
 .links {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
 }
 .about-link {
-  margin-left: 20px;
+  margin-left: 40px;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
   border-radius: var(--border-radius);
@@ -41,6 +48,7 @@ a {
   -moz-border-radius: var(--border-radius);
   -ms-border-radius: var(--border-radius);
   -o-border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
   padding: var(--padding);
 }
 .about-link:hover {
@@ -56,6 +64,7 @@ a {
   -moz-border-radius: var(--border-radius);
   -ms-border-radius: var(--border-radius);
   -o-border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
   padding: var(--padding);
 }
 .contact-link:hover {
@@ -77,6 +86,7 @@ a {
   -moz-border-radius: var(--border-radius);
   -ms-border-radius: var(--border-radius);
   -o-border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
   padding: var(--padding);
 }
 .yoga-link:hover {
@@ -87,7 +97,6 @@ a {
   -webkit-transition: 200ms;
   -moz-transition: 200ms;
   -ms-transition: 200ms;
-  -o-transition: 200ms;
 }
 .weather-link {
   color: #ffffff;
@@ -98,6 +107,7 @@ a {
   -moz-border-radius: var(--border-radius);
   -ms-border-radius: var(--border-radius);
   -o-border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
   padding: var(--padding);
 }
 .weather-link:hover {
@@ -124,6 +134,7 @@ a {
   -moz-border-radius: var(--border-radius);
   -ms-border-radius: var(--border-radius);
   -o-border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
   padding: var(--padding);
 }
 .yoghurt-link:hover {
@@ -136,24 +147,22 @@ a {
   -ms-transition: 200ms;
   -o-transition: 200ms;
 }
-
-.contact-info h3,
-.abt {
-  font-weight: 900;
-  font-size: 48px;
+.email{
+  font-size: 26px;
 }
-.contact-info a {
-  font-size: 25px;
-  margin-left: 60px;
-  color: #6c63ff;
+.email:hover{
+  text-decoration: underline;
 }
 @media (max-width: 576px) {
+  h1 {
+    font-size: 48px;
+  }
   h2 {
     font-size: 30px;
     text-align: center;
   }
   p {
-    text-align: justify;
+    text-align: center;
   }
 
   .yoga-link,
@@ -163,13 +172,5 @@ a {
     text-align: center;
     margin: 0 30px;
     letter-spacing: 2px;
-  }
-  .row {
-    display: flex;
-    flex-direction: column;
-  }
-  .image {
-    width: 100%;
-    margin: 20px;
   }
 }
